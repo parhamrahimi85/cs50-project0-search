@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css"> <!-- اتصال به فایل CSS -->
+    </head>
+    <body>
+         <!-- نوار ناوبری START -->
+        <ul class="navbar">
+            <li><a href="index.html">Google Search</a></li>
+            <li><a href="images.html">Google Images</a></li>
+            <li><a href="advanced.html">Google Advanced Search</a></li>
+        </ul>
+ <!-- نوار ناوبری END -->
+
+        <!-- فرم جستجو START -->
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search Google...">
+            <br>
+            <input type="submit" value="Google Search">
+            <input type="button" value="I'm Feeling Lucky" onclick="location.href='https://www.google.com/search?q=' + document.querySelector('input[name=q]').value + '&btnI=I'">
+        </form>
+ <!-- فرم جستجو END -->
+       
+
+    </body>
+</html>

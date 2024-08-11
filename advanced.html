@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css"> <!-- اتصال به فایل CSS -->
+</head>
+<body>
+    
+    <!-- نوار ناوبری START -->
+    <ul class="navbar">
+        <li><a href="index.html">Google Search</a></li>
+        <li><a href="images.html">Google Images</a></li>
+        <li><a href="advanced.html">Google Advanced Search</a></li>
+    </ul>
+    <!-- نوار ناوبری END -->
+
+        <!-- فرم جستجو START -->
+    <div class="search-container">
+        <form id=form1 action="https://www.google.com/search" method="get">
+            <input type="hidden" name="hl" value="en"> <!-- مشخص کردن زبان -->
+            <div class="search-field">
+                <label for="all-words">Find pages with (all these words):</label>
+                <input type="text" id="all-words" name="q" class="search-input">
+            </div>
+            <div class="search-field">
+                <label for="exact-phrase">Find pages with (this exact word or phrase):</label>
+                <input type="text" id="exact-phrase" name="q" class="search-input">
+            </div>
+            <div class="search-field">
+                <label for="any-words">Find pages with (any of these words):</label>
+                <input type="text" id="any-words" name="q" class="search-input">
+            </div>
+            <div class="search-field">
+                <label for="none-words">Find pages with (none of these words):</label>
+                <input type="text" id="none-words" name="q" class="search-input">
+            </div>
+            <input type="submit" value="Advanced Search" class="btn-advanced">
+        </form>
+    </div>
+ <!-- فرم جستجو END -->
+
+</body>
+</html>
